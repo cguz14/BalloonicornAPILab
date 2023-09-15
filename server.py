@@ -13,7 +13,7 @@ app.secret_key = os.environ['SECRETKEY']
 app.config['PRESERVE_CONTEXT_ON_EXCEPTION'] = True
 
 
-API_KEY = os.environ['API_KEY']
+API_KEY = os.environ['TICKETMASTER_KEY']
 
 
 @app.route('/')
