@@ -6,14 +6,14 @@ import requests
 
 
 app = Flask(__name__)
-app.secret_key = 'SECRETSECRETSECRET'
+app.secret_key = os.environ['SECRETKEY']
 
 # This configuration option makes the Flask interactive debugger
 # more useful (you should remove this line in production though)
 app.config['PRESERVE_CONTEXT_ON_EXCEPTION'] = True
 
 
-API_KEY = os.environ['TICKETMASTER_KEY']
+API_KEY = os.environ['API_KEY']
 
 
 @app.route('/')
